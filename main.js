@@ -22,7 +22,7 @@ function draw(e){
 
 
 // draw if mouse is down
-	if(mouseDown == true && redLine == true){ 
+	if(mouseDown == true && redLine == true){ //makes a red line
 		// draw a line between the dots while drawing part 3
 		ctx.lineTo(e.clientX, e.clientY);
 		// make the line connector red
@@ -45,7 +45,7 @@ function draw(e){
 
 	}
 	
-	else if(mouseDown == true && blueLine == true){ 
+	else if(mouseDown == true && blueLine == true){ //makes a blue line
 		// draw a line between the dots while drawing part 3
 		ctx.lineTo(e.clientX, e.clientY);
 		// make the line connector blue
@@ -67,7 +67,7 @@ function draw(e){
 
 
 	}
-	else if (mouseDown == true && blueLine == false && redLine == false){
+	else if (mouseDown == true && blueLine == false && redLine == false){//makes the default black line
 		// draw a line between the dots while drawing part 3
 		ctx.lineTo(e.clientX, e.clientY);
 		// draw a line between the dots part 4
