@@ -12,7 +12,7 @@ var ctx = canvas.getContext("2d");
 // how think the pen is
 var radius = 4;
 //tells if the mouse is clicked down or not
-var mouseDown = false;
+var mouseDown = true;
 // make the line between the dots thick 
 ctx.lineWidth = radius*2;
 //e is the event 
