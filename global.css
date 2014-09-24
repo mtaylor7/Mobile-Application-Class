@@ -3,6 +3,8 @@ body{
 	}
 canvas{
 	display: block;
+	width: 100%;
+	height: 92%;
 	}
 html { 
   background: url(football2.jpg) no-repeat center center fixed; 
@@ -10,4 +12,36 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+.blueButton{
+	color: blue;
+	background-color: deepskyblue;
+	position: absolute;
+	top: 5%;
+	left: 30%;
+	width: 100px;
+}
+.redButton{
+	color: red;
+	background-color: maroon;
+	position: absolute;
+	top: 5%;
+	left: 40%;
+	width: 100px;
+}
+.blackButton{
+	color: white;
+	background-color: black;
+	position: absolute;
+	top: 5%;
+	left: 50%;
+	width: 100px;
+}
+.resetButton{
+	color: green;
+	background-color: greenyellow;
+	position: absolute;
+	top: 5%;
+	left: 60%;
+	width: 100px;
 }
