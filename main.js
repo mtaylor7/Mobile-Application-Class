@@ -18,9 +18,8 @@ ctx.lineWidth = radius*2;
 //e is the event 
 var blueLine = false;
 var redLine = false;
+var blackLine = false;
 function draw(e){
-
-
 // draw if mouse is down
 	if(mouseDown == true && redLine == true){ //makes a red line
 		// draw a line between the dots while drawing part 3
@@ -54,6 +53,29 @@ function draw(e){
 		ctx.stroke();
 		// makes the line blue
 		ctx.fillStyle = "#3370d4"; 
+		//begins the path
+		ctx.beginPath(); 
+		//draws a circle, you have an (x coord, a y coord, start position, and end position)
+		ctx.arc(e.clientX, e.clientY, radius, 0, 2*Math.PI); //e is the event listener, clientX and clientY are the coordinates of the mouse (the radius, 2*Math.PI means that it is going to be a full circle
+		//fills the circle
+		ctx.fill();
+		// draw a line between the dots while drawing
+		ctx.beginPath();
+		// draw a line between the dots while drawing part 2
+		ctx.moveTo(e.clientX, e.clientY); 
+
+
+	}
+	
+	else if(mouseDown == true && blackLine == true){ //makes a black line
+		// draw a line between the dots while drawing part 3
+		ctx.lineTo(e.clientX, e.clientY);
+		// make the line connector black
+		ctx.strokeStyle = "#000000";
+		// draw a line between the dots part 4
+		ctx.stroke();
+		// makes the line black
+		ctx.fillStyle = "#000000"; 
 		//begins the path
 		ctx.beginPath(); 
 		//draws a circle, you have an (x coord, a y coord, start position, and end position)
@@ -105,9 +127,20 @@ canvas.addEventListener("mouseup", function(e){
 
 function drawBlueLine(){
 		blueLine = true;
+		blackLine = false;
 		redLine = false;
 }
 function drawRedLine(){
 		blueLine = false;
+		blackLine = false;
 		redLine = true;
+		
+}
+function drawBlackLine(){
+		blueLine = false;
+		redLine = false;
+		blackLine = true;
+}
+function reset(){
+	location.reload();
 }
