@@ -7,9 +7,9 @@ canvas.height = window.innerHeight;
 //append the canvas to the page.in the document, in the body, append the child of "canvas"
 document.body.appendChild(canvas);
 
-//this is the contex and is saying that we areusing 2d
+//this is the contex and is saying that we are using 2d
 var ctx = canvas.getContext("2d");
-// how think the pen is
+// how thick the pen is
 var radius = 4;
 //tells if the mouse is clicked down or not
 var mouseDown = true;
