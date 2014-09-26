@@ -41,7 +41,7 @@ function draw(e){
 		// draw a line between the dots while drawing
 		ctx.beginPath();
 		// draw a line between the dots while drawing part 2
-		ctx.moveTo(e.clientX, e.clientY); 
+		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY); 
 		console.log("your finger is moving accross the screen");
 
 
