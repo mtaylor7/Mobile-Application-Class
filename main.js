@@ -1,3 +1,5 @@
+// this it the test comment
+
 //make the canvas on the page
 var canvas = document.createElement("canvas");
 //whole width of the page
