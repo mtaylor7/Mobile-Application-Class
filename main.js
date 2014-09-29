@@ -11,6 +11,8 @@ document.body.appendChild(canvas);
 
 //this is the contex and is saying that we areusing 2d
 var ctx = canvas.getContext("2d");
+
+
 // how think the pen is
 var radius = 4;
 //tells if the mouse is clicked down or not
@@ -21,6 +23,8 @@ ctx.lineWidth = radius*2;
 var blueLine = false;
 var redLine = false;
 var blackLine = false;
+var cPushArray = new Array();
+var cStep = -1;
 function draw(e){
 // draw if mouse is down
 	if(mouseDown == true && redLine == true){ //makes a red line
@@ -41,10 +45,9 @@ function draw(e){
 		// draw a line between the dots while drawing
 		ctx.beginPath();
 		// draw a line between the dots while drawing part 2
-		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY); 
-		console.log("your finger is moving accross the screen");
-
-
+		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY);
+		
+		cPush();		
 	}
 	
 	else if(mouseDown == true && blueLine == true){ //makes a blue line
@@ -65,9 +68,9 @@ function draw(e){
 		// draw a line between the dots while drawing
 		ctx.beginPath();
 		// draw a line between the dots while drawing part 2
-		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY); 
-		console.log("your finger is moving accross the screen");
+		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY);
 
+		cPush();		
 	}
 	
 	else if(mouseDown == true && blackLine == true){ //makes a black line
@@ -89,8 +92,8 @@ function draw(e){
 		ctx.beginPath();
 		// draw a line between the dots while drawing part 2
 		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY); 
-		console.log("your finger is moving accross the screen");
-
+		
+		cPush();
 	}
 	else if (mouseDown == true && blueLine == false && redLine == false){//makes the default black line
 		// draw a line between the dots while drawing part 3
@@ -107,17 +110,16 @@ function draw(e){
 		ctx.beginPath();
 		// draw a line between the dots while drawing part 2
 		ctx.moveTo(e.touches[0].clientX, e.touches[0].clientY); 
-		console.log("your finger is moving accross the screen");
-	
+		
+		cPush();
 	}
-	}
+}
 // add an event listener that will listen for events in our canvas.
 canvas.addEventListener("touchmove", draw); //when the mouse moves, it will draw
 //do this function when the mouse is down
 canvas.addEventListener("touchstart", function(e){ 
 		// yes it is clicked
 		mouseDown = true;
-		console.log("the screen has been touched");
 		//makes it so that you can draw individual dots
 		draw(e); 
 });
@@ -127,7 +129,6 @@ canvas.addEventListener("touchend", function(e){
 		mouseDown = false;
 		// makes it so that you can draw another line without connecting it to the first line
 		ctx.beginPath();
-		console.log("your finger has left the screen");
 });
 
 function drawBlueLine(){
@@ -149,3 +150,30 @@ function drawBlackLine(){
 function reset(){
 	location.reload();
 }
+	
+	
+	//undo code.
+function cPush() {
+    cStep++;
+    if (cStep < cPushArray.length) { cPushArray.length = cStep; }
+    cPushArray.push(document.getElementById('canvas').toDataURL());
+}
+
+function cUndo() {
+    if (cStep > 0) {
+        cStep--;
+        var canvasPic = new Image();
+        canvasPic.src = cPushArray[cStep];
+        canvasPic.onload = function () { ctx.drawImage(canvasPic, 0, 0); }
+    }
+}
+
+function cRedo() {
+    if (cStep < cPushArray.length-1) {
+        cStep++;
+        var canvasPic = new Image();
+        canvasPic.src = cPushArray[cStep];
+        canvasPic.onload = function () { ctx.drawImage(canvasPic, 0, 0); }
+    }
+}
+
