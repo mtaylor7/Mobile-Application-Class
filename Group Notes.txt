@@ -1,0 +1,22 @@
+Functionality:
+-Undo
+-Save
+-Redo
+-Various Colors
+-Options: X & O
+
+
+Plays:
+
+
+Menu:
+-Bootstrap pull-down?
+
+
+Backgrounds/Images:
+-Football, Basketball, Hockey, Soccer
+-Make sure they all have boundary lines?
+
+User Tests:
+
+
