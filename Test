@@ -1,0 +1,75 @@
+<style><!--
+.social{
+	height: 30px !important;
+	width: 30px !important;
+	padding: 0px !important;
+	float: left;
+	margin-left: 15px;
+}
+.words{
+	font-size: 14pt;
+	font-weight: bold;
+}
+.circles{
+	margin-top: 28px;
+}
+--></style>
+<div>[x97374]</div>
+<div class="alumni-title-home"></div>
+<!-- Carousel -->
+<div>[x97521]</div>
+<p>​</p>
+<div class="alumni-inlet">
+<div class="row no-margin">
+<div class="col-sm-8 alumni-main"><!-- Circle Links -->
+<div class="row alumni-circle-links alumni-border-gradient"><a class="col-all-5 words">BYU-Idaho Alumni </a> <img style="margin-left: -13px;" class="social"  style="padding: 0px !important;" src="Images/alumni/fb-hompage-button.png" /><img class="social"  style="padding: 0px !important;" src="Images/alumni/twitter-homepage-button.png" /><img class="social"  style="padding: 0px !important;" src="Images/alumni/linkedin-homepage-button.png" />
+<div class="col-all-4 no-pad" style="clear: left;"><a href="x97520.xml" onclick="mentor()"> <img alt="Mentoring" class="circles" src="Images/alumni/homepage-mentor.png" /> </a>
+<h3><a href="x97520.xml" onclick="mentor()">Mentoring</a></h3>
+</div>
+<div class="col-all-4 no-pad"><a href="x97585.xml" onclick="linkedin()"> <img alt="LinkedIn" class="circles" src="Images/alumni/homepage-linkedin-resource.png" /> </a>
+<h3><a href="x97585.xml" onclick="linkedin()">Linkedin Training</a></h3>
+</div>
+<div class="col-all-4 no-pad"><a href="http://www.byuiconnect.com/s/1085/07-idaho/index.aspx?sid=1085&amp;gid=4&amp;pgid=2293&amp;cid=5705&amp;post_id=0" onclick="update()"> <img alt="Update your information" class="circles" src="Images/alumni/homepage-update-info.png" /> </a>
+<h3><a href="http://www.byuiconnect.com/s/1085/07-idaho/index.aspx?sid=1085&amp;gid=4&amp;pgid=2293&amp;cid=5705&amp;post_id=0" onclick="update()">Update Your Info</a></h3>
+</div>
+</div>
+<!-- End Circle Links --> <!-- Spotlight -->
+<div class="alumni-spotlight row">
+<div class="col-all-4 spotlight-img"><a href="x97525.xml"><img alt="Spotlight" src="Images/alumni/ryan-hamilton-homepage.png" /></a></div>
+<div class="col-all-8">
+<h2><a href="x97525.xml">Alumni Profile</a></h2>
+<p>Ryan Hamilton, BYU-Idaho alumnus, was the guest comedian on Conan last night and he had to take a moment to explain to the audience why his eternally chipper smile sometimes doesn't line up with the way he&rsquo;s feeling.</p>
+<p>Check out more Alumni Profiles <a href="x97525.xml">Here</a>.</p>
+</div>
+</div>
+<!-- End Spotlight --></div>
+<!-- <div class="col-sm-1 hidden-xs"><div class="hidden-xs alumni-break-line"></div></div> -->
+<div class="no-margin alumni-events-news-row col-xs-12 col-sm-4"><!-- Events/Calendar-->
+<div class="alumni-cal col-xs-12 panel panel-primary no-pad"><a class="panel-heading" href="http://bit.ly/1i4TazU">Alumni Events</a>
+<ul class="feed-container list-group"></ul>
+</div>
+<!-- End Calendar --> <!-- News -->
+<div class="alumni-news col-xs-12 panel panel-primary no-pad"><a class="panel-heading" href="#">BYU-Idaho News</a>
+<ul class="news-container list-group"></ul>
+</div>
+<!-- End News --></div>
+</div>
+</div>
+<div class="no-margin alumni-events-news-row-2 col-xs-12"><!-- Events/Calendar-->
+<div class="alumni-cal col-xs-12 panel panel-primary no-pad"><a class="panel-heading" href="http://bit.ly/1i4TazU">Alumni Events</a>
+<ul class="feed-container list-group"></ul>
+</div>
+<!-- End Calendar --> <!-- News -->
+<div class="alumni-news col-xs-12 panel panel-primary no-pad"><a class="panel-heading" href="#">BYU-Idaho News</a>
+<ul class="news-container list-group"></ul>
+</div>
+<!-- End News --></div>
+<!-- END Color blocks -->
+<p></p>
+<!-- Begin Alumni Footer -->
+<div class="alumni-anti-shadow-top-home col-all-12">
+<p><span class="alumni-no-wrap">Contact Information</span> &nbsp;&nbsp; <span class="alumni-no-wrap">Email: <a href="mailto:alumni@byui.edu">alumni@byui.edu</a></span> &nbsp;&nbsp; | &nbsp;&nbsp; <span class="alumni-no-wrap">Phone: 1-800-537-2586</span> &nbsp;&nbsp; | &nbsp;&nbsp; <span class="alumni-no-wrap">208-496-3300</span> &nbsp;&nbsp; | &nbsp;&nbsp; <span class="alumni-no-wrap">MC 175</span></p>
+<div>[x97522]</div>
+<!-- End Alumni Footer -->
+<div>[x96513]</div>
+</div>
